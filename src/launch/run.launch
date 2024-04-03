@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- <include file="$(find slam)/launch/RPVIO_c1_mono_initial.launch"/> -->
+    <!-- <include file="$(find slam)/launch/EuRoC_MH_03.launch"/> -->
+    <include file="$(find slam)/launch/fr3_walk_rpy.launch"/> 
+    <!-- <include file="$(find slam)/launch/fr3_walk_half.launch"/>  -->
+    <!-- <include file="$(find slam)/launch/fr3_walk_xyz.launch"/>  -->
+    <!-- <include file="$(find slam)/launch/fr3_walk_half.launch"/>  -->
+    <!-- <include file="$(find slam)/launch/fr3_walk_xyz.launch"/>  -->
+
+    <!-- <include file="$(find slam)/launch/kitti_04.launch"/>  -->
+    <!-- <include file="$(find slam)/launch/kitti_03.launch"/>  -->
+
+    <include file="$(find semantic_cnn)/launch/yolact_server.launch"/> 
+    <!-- <include file="$(find semantic_cnn)/launch/action_client.launch"/> -->
+
+</launch>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="PATH_TO_VOCABULARY" value="$(find slam)/vocab/ORBvoc.txt"/>
+    <arg name="PATH_TO_SETTINGS_FILE" value="$(find slam)/config/RGB-D/TUM3.yaml"/>
+    <arg name="PATH_TO_ASSOCIATIONS" value="$(find slam)/config/RGB-D/associations/fr3_walk_static.txt" />
+    <arg name="PATH_TO_SEQUENCE" value="/data/tum/rgbd_dataset_freiburg3_walking_static" />
+    <arg name="PATH_TO_RESULT" value="/out/tum/fr3_walking_static_yolact" />
+
+    <node name="slam" pkg="slam" type="Dynamic_RGBD"  
+        args="$(arg PATH_TO_VOCABULARY) $(arg PATH_TO_SETTINGS_FILE) $(arg PATH_TO_SEQUENCE) $(arg PATH_TO_ASSOCIATIONS) $(arg PATH_TO_RESULT)" 
+        output="screen">
+        <param name="init_delay" type="double" value="100"/>
+        <param name="frame_delay" type="double" value="100"/>
+        <param name="init_frame" type="int" value="2"/>     
+        <param name="image_delay" type="int" value="2"/>     
+        <param name="save_image_result" type="int" value="0"/> 
+        <param name="use_viewer" type="int" value="0"/>      
+        <param name="semantic_config_path" type="string" value="$(find slam)/config/yolact_settings.yaml"/>    
+    </node>
+</launch>

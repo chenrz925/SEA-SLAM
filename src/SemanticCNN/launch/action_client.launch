@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+    <rosparam command="load" file="$(find semantic_cnn)/params/yolact_param.yaml"/>
+    <node name="semantic_client" pkg="semantic_cnn" type="client" output="screen"/>
+
+</launch>

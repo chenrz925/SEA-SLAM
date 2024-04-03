@@ -1,0 +1,14 @@
+camera:
+  rgb: "/camera/rgb/image_color"
+semantic:
+  semantic_label: "semantic_label"
+  semantic_label_color: "semantic_label_color"
+  action_name: "/semantic_server"
+  model_name: 'yolact'    # not used
+  checkpoint: "yolact_resnet50_54_800000.pth"
+  model_scripts: /root/catkin_ws/src/SemanticCNN/script/model
+  batch_size: 1
+client_args:
+  bagfile: "/data/tum/rgbd_dataset_freiburg3_walking_rpy.bag"
+  save_result: false
+  result_path: "/out/semantic_cnn"

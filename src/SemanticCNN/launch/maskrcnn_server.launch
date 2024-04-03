@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+    <rosparam command="load" file="$(find semantic_cnn)/params/maskrcnn_param.yaml"/>
+    <node name="semantic_server" pkg="semantic_cnn" type="server.py" output="screen"/>
+
+</launch>

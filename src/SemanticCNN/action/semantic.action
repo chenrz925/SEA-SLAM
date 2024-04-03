@@ -1,0 +1,17 @@
+#part1: the goal, to be sent by the client
+int16 id
+sensor_msgs/Image[] image #rgb
+
+---
+#part2: the result, to be sent by the server upon completion
+uint16 id
+float32[] bbox
+uint16[] object_num
+uint16[] class_id
+sensor_msgs/Image[] label
+sensor_msgs/Image[] score
+sensor_msgs/Image[] label_object
+
+---
+#part3: the feedback, to be sent by server during execution
+bool complete

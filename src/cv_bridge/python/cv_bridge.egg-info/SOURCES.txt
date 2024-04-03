@@ -1,0 +1,7 @@
+setup.py
+python/cv_bridge/__init__.py
+python/cv_bridge/core.py
+python/cv_bridge.egg-info/PKG-INFO
+python/cv_bridge.egg-info/SOURCES.txt
+python/cv_bridge.egg-info/dependency_links.txt
+python/cv_bridge.egg-info/top_level.txt

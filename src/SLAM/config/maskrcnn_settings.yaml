@@ -1,0 +1,33 @@
+%YAML:1.0
+
+image.batch_size: 2
+image.dilation_size: 10
+image.semantic_num: 1
+image.growThresh: 0.001
+image.growThreshRGB: 50
+space.reserve: 1000
+
+dynamic.threshold: 0.5
+dynamic.object: 
+    - {class_name: person, class_id: 1}
+    - {class_name: bicycle, class_id: 2}
+    - {class_name: car, class_id: 3}
+    - {class_name: motorcycle, class_id: 4}
+    - {class_name: airplane, class_id: 5}
+    - {class_name: bus, class_id: 6}
+    - {class_name: train, class_id: 7} 
+    - {class_name: truck, class_id: 8}
+    - {class_name: boat, class_id: 9}
+    - {class_name: chair, class_id: 57}
+    # - {class_name: tv, class_id: 63}
+                # bird: 
+                # cat: 
+                # dog:
+                # skateboard: 
+                # bottle: 
+                # cup: 
+                # laptop: 
+                # mouse: 
+                # cell phone: 
+                # book: 
+                

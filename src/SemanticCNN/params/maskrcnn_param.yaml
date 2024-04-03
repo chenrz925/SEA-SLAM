@@ -1,0 +1,14 @@
+camera:
+  rgb: "/camera/rgb/image_color"
+semantic:
+  semantic_label: "semantic_label"
+  semantic_label_color: "semantic_label_color"
+  action_name: "/semantic_server"
+  model_name: 'maskrcnn'    # not used
+  checkpoint: "mask_rcnn_coco.h5"
+  model_scripts: "/media/mxc/bs/SeaSLAMv1.0/src/SemanticCNN/script/model/"
+  batch_size: 2
+client_args:
+  bagfile: "/data/tum/rgbd_dataset_freiburg3_walking_xyz.bag"
+  save_result: false
+  result_path: "/media/mxc/bs/SeaSLAM/src/SemanticCNN/result"
