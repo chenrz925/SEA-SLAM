@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CMakeLists.txt.user
 CMakeCache.txt
 CMakeFiles
@@ -20,6 +21,8 @@ src/SemanticCNN/script/SparseInst/
 src/SLAM/Vocabulary/
 src/Thirdparty/
 
+=======
+>>>>>>> 8d42d5d56d245c18dc3d6f18d3dce5d9aede3df1
 devel/
 logs/
 build/
@@ -71,5 +74,8 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+<<<<<<< HEAD
 
 out
+=======
+>>>>>>> 8d42d5d56d245c18dc3d6f18d3dce5d9aede3df1
